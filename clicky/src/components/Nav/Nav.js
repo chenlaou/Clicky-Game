@@ -1,23 +1,20 @@
 import React from "react";
 import "./Nav.css";
 
-const Nav = props => 
+const Nav = props => (
+  <nav>
+    <ul>
+      <li className="brand animated lightSpeedIn">
+        <a href="/clicky-game/">{props.title}</a>
+      </li>
 
-<nav className="nav">
-    <div className="nav-wrapper">
-        <a href="#" className="brand-logo right">
-            Marvel Memory Game
-        </a>
-        <ul id="nav-mobile" className="left hide-on-med-and-down">
-            <li>
-                <a href="#">Start</a>
-            </li>
-            <li>
-                <a href="#">Reset</a>
-            </li>
-            <li>
-                <a href="#">Leaderboard</a>
-            </li>
-            </ul>
-    </div>
-</nav>
+      <li id="rw">{props.rightWrong}</li>
+
+      <li id="cur-sco">Current Score: {props.score}</li>
+
+      <li id="top-sco">Top Score: {props.topScore}</li>
+    </ul>
+  </nav>
+);
+
+export default Nav;

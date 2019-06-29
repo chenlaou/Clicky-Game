@@ -1,9 +1,12 @@
-.wrapper {
+
+} .wrapper {
     background: lightgray;
+    background-image: url('https://www.ubackground.com/_ph/22/574459967.jpg');
     height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
-} 
+    padding-bottom: 50px;
+  }
