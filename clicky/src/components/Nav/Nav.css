@@ -1,0 +1,12 @@
+.nav {
+    font-size: 3rem;
+    color: darkblue;
+    margin-bottom: 50px;
+    background-color: darkgray;
+    padding: 20px;
+    height: auto;
+}
+
+a {
+    margin-right: 10px;
+}
